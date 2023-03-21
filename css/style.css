@@ -1,0 +1,63 @@
+body {
+    font-family: 'Raleway', sans-serif;
+    color: #BABABA;
+    letter-spacing: 0.15em;
+    background: url('/images/download.png') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.middlesection {
+    text-align: center;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.glow {
+    font-size: 80px;
+    color: #BABABA;
+    text-align: center;
+    -webkit-animation: glow 2s ease-in-out infinite alternate;
+    -moz-animation: glow 2s ease-in-out infinite alternate;
+    animation: glow 2s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+    from {
+        text-shadow: 0 0 5px #BABABA, 0 0 10px #e66800, 0 0 10px #e66800, 0 0 10px #e66800, 0 0 20px #e66800, 0 0 30px #e66800, 0 0 40px #e66800;
+    }
+
+    to {
+        text-shadow: 0 0 10px #BABABA, 0 0 10px #de4100, 0 0 10px #de4100, 0 0 20px #de4100, 0 0 30px #de4100, 0 0 40px #de4100, 0 0 50px #de4100;
+    }
+}
+
+span {
+    display: inline-block;
+}
+
+.btn-dark { 
+    width: 125px;
+    margin: 15px;
+}
+
+
+body {
+    animation: fadeInAnimation ease 2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+ 
+@keyframes fadeInAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+     }
+}
