@@ -68,3 +68,13 @@ body {
      }
 }
 
+
+.link {
+    text-decoration: none !important;
+    color: #e66800;
+    transition: 0.25s;
+}
+
+.link:hover {
+    color: #de4100;
+}
