@@ -1,3 +1,9 @@
+.modal-content  { 
+    background-color: #242424 !important;
+}
+.modal-header {
+    border-bottom: 1px solid #de4100 !important;
+}
 body {
     font-family: 'Raleway', sans-serif;
     color: #BABABA;
@@ -61,3 +67,4 @@ body {
         opacity: 1;
      }
 }
+
