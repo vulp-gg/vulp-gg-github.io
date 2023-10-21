@@ -66,6 +66,11 @@
     <meta property="twitter:image"
         content="https://cdn.discordapp.com/attachments/874111647894081576/1087805892235374722/logo-small-AvVXKjqx0OHK9288qELNH72xLQK0-removebg-preview.png">
 
+        <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
+        <link rel="manifest" href="/favicon/site.webmanifest">
+
     <link href="css/bootstrap.css" rel="stylesheet" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -73,10 +78,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Raleway:wght@600&display=swap"
         rel="stylesheet">
 
-    <link rel="apple-touch-icon" sizes="180x180" href="/favicon/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="/favicon/favicon-16x16.png">
-    <link rel="manifest" href="/favicon/site.webmanifest">
+  
 
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.3/dist/jquery.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
@@ -96,24 +98,40 @@
         <h3 style="margin-bottom: 15px;">Unturned Cheats Revolutionized</h3>
         <span>
             <a class="btn btn-dark" href="/discord" role="button">Discord</a>
-            <a class="btn btn-dark" data-toggle="modal" data-target="#comingSoon" role="button">Purchase</a>
-            <a class="btn btn-dark" data-toggle="modal" data-target="#comingSoon" role="button">Features</a>
-        </span>
+            <a class="btn btn-dark" href="/purchase" role="button">Purchase</a>
+            <a class="btn btn-dark" href="/features" role="button">Features</a>
+            <a class="btn btn-dark" href="https://vulp.gitbook.io/unturned-lua/" role="button">Scripting</a>
+          </span>
     </div>
 </body>
-<div class="modal fade" id="comingSoon" tabindex="-1" role="dialog" aria-labelledby="lbl" aria-hidden="true">
+<div class="modal fade" id="features" tabindex="-1" role="dialog" aria-labelledby="lbl" aria-hidden="true">
     <div class="modal-dialog" role="document">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="lbl">Coming Soon</h5>
+          <h5 class="modal-title" id="lbl">Features</h5>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          Join the <a class="link" href="/discord">Discord</a> to be notified when we release!
+          im working on it
         </div>
       </div>
     </div>
   </div>
+  <script>
+    function openModalBasedOnFragment() {
+      if (window.location.hash) {
+        var fragment = window.location.hash.substr(1);
+        if (fragment === "features") {
+          $('#features').modal('show');
+        }
+      }
+    }
+  
+    $(document).ready(function() {
+      openModalBasedOnFragment();
+      window.addEventListener('hashchange', openModalBasedOnFragment);
+    });
+  </script>
 </html>

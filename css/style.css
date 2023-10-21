@@ -50,6 +50,7 @@ span {
 .btn-dark { 
     width: 125px;
     margin: 15px;
+    color: #fff !important;
 }
 
 
