@@ -79,3 +79,7 @@ body {
 .link:hover {
     color: #de4100;
 }
+
+.modal-dialog {
+    max-width: 80% !important;
+}
